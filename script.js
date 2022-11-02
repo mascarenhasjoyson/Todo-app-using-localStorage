@@ -61,11 +61,11 @@ function selectData() {
         tablebody +
         `
                   <tr>
-                  <td>${srno}</td>
+                  <td class="text-center">${srno}</td>
                   <td>${arr[k]}</td>
                   <td>${arr[k + 1]}</td>
-                  <td><ion-icon name="create-outline" onclick="editData(${k})"></ion-icon></td>
-                  <td><ion-icon name="trash-outline" onclick="deleteData(${k})"></ion-icon></td>
+                  <td class="text-center"><ion-icon style="cursor:pointer; text-align:center" name="create-outline" onclick="editData(${k})"></ion-icon></td>
+                  <td class="text-center"><ion-icon name="trash-outline" style="cursor:pointer;" onclick="deleteData(${k})"></ion-icon></td>
                   </tr>
                   `;
       srno++;
